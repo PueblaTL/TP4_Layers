@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a24f840-9967-4e1a-a3cc-1959d39bb14b" name="Changes" comment="" />
+    <list default="true" id="4a24f840-9967-4e1a-a3cc-1959d39bb14b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/modelo/ConcursoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/modelo/ConcursoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/persistencia/ArchivoConcursoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/persistencia/ArchivoConcursoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/persistencia/ArchivoInscripcionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/persistencia/ArchivoInscripcionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/persistencia/JdbcConcursoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/persistencia/JdbcConcursoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/persistencia/JdbcInscripcionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/persistencia/JdbcInscripcionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/ui/RadioCompetitionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/unrn/tp4/ejercicio3/ui/RadioCompetitionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio1/database/JDBCRegistroParticipante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio1/main/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio1/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio1/model/Concurso.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio1/model/Participante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio1/model/RegistroParticipante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio1/ui/VentanaPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio2/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio2/model/Api.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio2/model/Importador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio2/model/Notificador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio2/model/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio2/service/ImportadorArchivo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio2/service/NotificadorEmail$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/unrn/tp4/ejercicio2/service/NotificadorEmail.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,21 +39,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "PueblaTL"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PueblaTL&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/PueblaTL/TP4_Layers.git",
-    "accountId": "13a255e7-c37a-4486-8362-30bfbe44575f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PueblaTL/TP4_Layers.git&quot;,
+    &quot;accountId&quot;: &quot;13a255e7-c37a-4486-8362-30bfbe44575f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2wUpYM7Li99VuoBpsxCKx62fY6P" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,11 +61,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ar.unrn.tp4.ejercicio3.main.Main" />
+      <module name="ejercicio2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.unrn.tp4.ejercicio3.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -1,6 +1,7 @@
 package ar.unrn.tp4.ejercicio3.persistencia;
 
 import ar.unrn.tp4.ejercicio3.modelo.Concurso;
+import ar.unrn.tp4.ejercicio3.modelo.ConcursoRepository;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,9 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArchivoConcursoRepository implements ConcursoRepository {
-    private final String filePath; // = "src/main/resources/concursos.txt";
+    private final String filePath;
 
-    // Constructor para inyectar la ruta (mejor práctica)
     public ArchivoConcursoRepository(String filePath) {
         this.filePath = filePath;
     }
@@ -34,7 +34,7 @@ public class ArchivoConcursoRepository implements ConcursoRepository {
                         if (concurso.estaAbierto()) {
                             concursos.add(concurso);
                         }
-                    } catch (Exception e) { // Catch broader exception for parsing/date issues
+                    } catch (Exception e) {
                         System.err.println("Skipping invalid line in concursos.txt: " + line + " - " + e.getMessage());
                     }
                 } else {

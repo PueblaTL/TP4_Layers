@@ -2,6 +2,7 @@ package ar.unrn.tp4.ejercicio3.persistencia;
 
 import ar.unrn.tp4.ejercicio3.modelo.Concurso;
 import ar.unrn.tp4.ejercicio3.modelo.Inscripcion;
+import ar.unrn.tp4.ejercicio3.modelo.InscripcionRepository;
 import ar.unrn.tp4.ejercicio3.modelo.Participante;
 
 import java.io.BufferedWriter;
@@ -9,9 +10,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ArchivoInscripcionRepository implements InscripcionRepository {
-    private final String filePath; // = "src/main/resources/inscriptos.txt";
+    private final String filePath;
 
-    // Constructor para inyectar la ruta
     public ArchivoInscripcionRepository(String filePath) {
         this.filePath = filePath;
     }
@@ -20,6 +20,8 @@ public class ArchivoInscripcionRepository implements InscripcionRepository {
     public void save(Inscripcion inscripcion) {
         Participante p = inscripcion.getParticipante();
         Concurso c = inscripcion.getConcurso();
+
+        // Formatear según el requisito: apellido, nombre, teléfono, email, idconcurso
         String line = String.join(", ",
                 p.getApellido(),
                 p.getNombre(),

@@ -1,9 +1,11 @@
 package ar.unrn.tp4.ejercicio3.persistencia;
 
 import ar.unrn.tp4.ejercicio3.modelo.Concurso;
+import ar.unrn.tp4.ejercicio3.modelo.ConcursoRepository;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,12 +13,12 @@ public class JdbcConcursoRepository implements ConcursoRepository {
     private String dbUrl;
     private String user;
     private String password;
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy/MM/dd");
 
     public JdbcConcursoRepository(String dbUrl, String user, String password) {
-        this.dbUrl = dbUrl; // e.g., "jdbc:h2:./radio_db"
+        this.dbUrl = dbUrl;
         this.user = user;
         this.password = password;
-        // Consider loading driver explicitly if needed: Class.forName("org.h2.Driver");
     }
 
     private Connection getConnection() throws SQLException {
@@ -36,15 +38,14 @@ public class JdbcConcursoRepository implements ConcursoRepository {
 
             try (ResultSet rs = pstmt.executeQuery()) {
                 while (rs.next()) {
-                    // Ensure Concurso constructor matches expected date format (yyyy-MM-dd from DB)
-                    // Or format here: rs.getDate(...).toLocalDate().format(DateTimeFormatter.ISO_DATE) -> yyyy-MM-dd
-                    // Or format here: rs.getDate(...).toLocalDate().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"))
+                    LocalDate fechaInicio = rs.getDate("fecha_inicio_inscripcion").toLocalDate();
+                    LocalDate fechaFin = rs.getDate("fecha_fin_inscripcion").toLocalDate();
+
                     concursos.add(new Concurso(
                             rs.getInt("id_concurso"),
                             rs.getString("nombre"),
-                            // Adjust date format based on Concurso constructor expectation
-                            rs.getDate("fecha_inicio_inscripcion").toLocalDate().format(DateTimeFormatter.ofPattern("yyyy/MM/dd")),
-                            rs.getDate("fecha_fin_inscripcion").toLocalDate().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"))
+                            fechaInicio.format(DATE_FORMATTER),
+                            fechaFin.format(DATE_FORMATTER)
                     ));
                 }
             }

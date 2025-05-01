@@ -2,13 +2,13 @@ package ar.unrn.tp4.ejercicio3.persistencia;
 
 import ar.unrn.tp4.ejercicio3.modelo.Concurso;
 import ar.unrn.tp4.ejercicio3.modelo.Inscripcion;
+import ar.unrn.tp4.ejercicio3.modelo.InscripcionRepository;
 import ar.unrn.tp4.ejercicio3.modelo.Participante;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
 
 public class JdbcInscripcionRepository implements InscripcionRepository {
     private String dbUrl;
